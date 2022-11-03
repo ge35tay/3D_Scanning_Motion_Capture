@@ -1,0 +1,8 @@
+# Data
+/Data/
+# Lib
+/Lib/
+# build
+/*/build/
+# vscode
+/*/.vscode/
