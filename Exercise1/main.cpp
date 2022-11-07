@@ -159,9 +159,9 @@ int main()
 		// vertices[idx].color = Vector4uc(0,0,0,0);
 		// otherwise apply back-projection and transform the vertex to world space, use the corresponding color from the colormap
 		Vertex* vertices = new Vertex[sensor.GetDepthImageWidth() * sensor.GetDepthImageHeight()];
-		for (int row = 0; row <= sensor.GetDepthImageHeight(); row++)
+		for (int row = 0; row < sensor.GetDepthImageHeight(); row++)
 		{
-			for (int column=0; column<=sensor.GetDepthImageWidth(); column++)
+			for (int column=0; column<sensor.GetDepthImageWidth(); column++)
 			{
 				int idx = row * sensor.GetColorImageWidth() + column;
 				if (depthMap[idx] == MINF){

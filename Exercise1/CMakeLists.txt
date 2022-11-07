@@ -35,7 +35,7 @@ set(SOURCES
     FreeImageHelper.cpp
 )
 
-link_directories(${FreeImage_LIBRARY_DIR})
+#link_directories(${FreeImage_LIBRARY_DIR})
 add_executable(exercise_1 ${HEADERS} ${SOURCES})
 target_include_directories(exercise_1 PUBLIC ${EIGEN3_INCLUDE_DIR} ${FreeImage_INCLUDE_DIR})
 target_link_libraries(exercise_1 general Eigen3::Eigen freeimage)
