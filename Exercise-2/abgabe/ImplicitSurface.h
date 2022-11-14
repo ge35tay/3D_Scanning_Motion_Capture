@@ -1,4 +1,4 @@
-//#pragma once
+#pragma once
 
 #ifndef IMPLICIT_SURFACE_H
 #define IMPLICIT_SURFACE_H
@@ -25,7 +25,9 @@ public:
 		// TODO: implement the implicit sphere formula using the member variables m_center and m_radius
 		return (_x[0] - m_center[0]) * (_x[0] - m_center[0]) + (_x[1] - m_center[1]) * (_x[1] - m_center[1]) + (_x[2] - m_center[2]) * (_x[2] - m_center[2]) - m_radius * m_radius;
 	}
-https://2022ss-in-rmp.fb.tumexam.de/2amv1crn17wgcch712tit84tizkh3s7t42wy0pww1xe1f0lh6tdu18zl87vi25r7
+
+private:
+	Eigen::Vector3d m_center;
 	double m_radius;
 };
 
